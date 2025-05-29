@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "b2fcf23c-a8ee-4bb3-b173-b85aafa50f91",
+		"name": "main",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16025267"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"ererf@gmail.com\",\n    \"password\": \"fssfs1111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rule-crud",
+			"item": [
+				{
+					"name": "getOne",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXVpZCI6IjEzZjkxMGI0LTFmMWItNDkwNC04ZmJkLTAzMDg5M2NkZmI4MSIsImVtYWlsIjoiZXZlbnRvcnlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyNWY5ZTc5NDMyM2I0NTM4ODVmNTE4MWYxYjYyNGQwYiIsImNyZWF0ZWRfYXQiOiIyMDI1LTA1LTI4VDE3OjQ1OjI2LjI0M1oiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNS0yOFQxNzo0NToyNi4yNDNaIiwiZGVsZXRlZF9hdCI6bnVsbCwiaWF0IjoxNzQ4NDYxMDM5LCJleHAiOjE3NDg0NzU0Mzl9.q3ZCAa5EYKmFGXA2M1sTbLwLUD2A_iE0IEddXx3cAnI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/rule/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"8"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXVpZCI6IjEzZjkxMGI0LTFmMWItNDkwNC04ZmJkLTAzMDg5M2NkZmI4MSIsImVtYWlsIjoiZXZlbnRvcnlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyNWY5ZTc5NDMyM2I0NTM4ODVmNTE4MWYxYjYyNGQwYiIsImNyZWF0ZWRfYXQiOiIyMDI1LTA1LTI4VDE3OjQ1OjI2LjI0M1oiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNS0yOFQxNzo0NToyNi4yNDNaIiwiZGVsZXRlZF9hdCI6bnVsbCwiaWF0IjoxNzQ4NDYxMDM5LCJleHAiOjE3NDg0NzU0Mzl9.q3ZCAa5EYKmFGXA2M1sTbLwLUD2A_iE0IEddXx3cAnI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/rule/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXVpZCI6IjEzZjkxMGI0LTFmMWItNDkwNC04ZmJkLTAzMDg5M2NkZmI4MSIsImVtYWlsIjoiZXZlbnRvcnlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyNWY5ZTc5NDMyM2I0NTM4ODVmNTE4MWYxYjYyNGQwYiIsImNyZWF0ZWRfYXQiOiIyMDI1LTA1LTI4VDE3OjQ1OjI2LjI0M1oiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNS0yOFQxNzo0NToyNi4yNDNaIiwiZGVsZXRlZF9hdCI6bnVsbCwiaWF0IjoxNzQ4NDYxMDM5LCJleHAiOjE3NDg0NzU0Mzl9.q3ZCAa5EYKmFGXA2M1sTbLwLUD2A_iE0IEddXx3cAnI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"sdfsdf\",\n    \"trigger_condition\":{},\n    \"action\":{},\n    \"type\":\"invoices\"\n\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/rule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXVpZCI6ImY1NzQ2ZGMwLTFjNjgtNGI2Yy05MDBlLTc5ZDUxYzc0NWNjNiIsImVtYWlsIjoiZXZlbnRvcnlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyNWY5ZTc5NDMyM2I0NTM4ODVmNTE4MWYxYjYyNGQwYiIsImNyZWF0ZWRfYXQiOiIyMDI1LTA1LTI4VDA5OjQ2OjQxLjUwMVoiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNS0yOFQwOTo0Njo0MS41MDFaIiwiZGVsZXRlZF9hdCI6bnVsbCwiaWF0IjoxNzQ4NDMzNTI0LCJleHAiOjE3NDg0NDc5MjR9.HKVNWAMGdOjVr5hag8TpgRksKAx78dTjGbuVibxcwYI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/rule/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXVpZCI6ImY1NzQ2ZGMwLTFjNjgtNGI2Yy05MDBlLTc5ZDUxYzc0NWNjNiIsImVtYWlsIjoiZXZlbnRvcnlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyNWY5ZTc5NDMyM2I0NTM4ODVmNTE4MWYxYjYyNGQwYiIsImNyZWF0ZWRfYXQiOiIyMDI1LTA1LTI4VDA5OjQ2OjQxLjUwMVoiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNS0yOFQwOTo0Njo0MS41MDFaIiwiZGVsZXRlZF9hdCI6bnVsbCwiaWF0IjoxNzQ4NDMzNTI0LCJleHAiOjE3NDg0NDc5MjR9.HKVNWAMGdOjVr5hag8TpgRksKAx78dTjGbuVibxcwYI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"dedededeed1999999999\",\n    \"description\":\"sdfifjweoirefjwroifjsdf\",\n    \"trigger_condition\":{},\n    \"action\":{}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/rule/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

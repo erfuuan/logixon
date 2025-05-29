@@ -1,0 +1,18 @@
+{
+  "name": "fakedb-io",
+  "version": "1.0.0",
+  "main": "index.js",
+   "scripts": {
+    "start": "node core/app.js",
+    "dev": "node --watch core/app.js",
+    "test": "clear;cross-env NODE_OPTIONS=--experimental-vm-modules NODE_ENV=development  jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "pg": "^8.16.0",
+    "sequelize": "^6.37.7"
+  }
+}

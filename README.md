@@ -1,3 +1,5 @@
+![eyeOne Logo](logo.png)
+
 # Logixon
 
 **Logixon** is a dynamic and modular rule-based engine designed to automate decision-making based on user-defined triggers and actions.
